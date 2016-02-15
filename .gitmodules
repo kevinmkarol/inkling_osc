@@ -1,0 +1,6 @@
+[submodule "src/libraries/hidapi"]
+	path = src/libraries/hidapi
+	url = https://github.com/signal11/hidapi.git
+[submodule "src/libraries/tinyosc"]
+	path = src/libraries/tinyosc
+	url = https://github.com/mhroth/tinyosc.git
