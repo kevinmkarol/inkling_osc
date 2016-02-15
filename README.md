@@ -5,8 +5,7 @@ This small library broadcasts data from the [Wacom Inkling](http://inkling.wacom
 
 To build the project simply run ./configure from the top directory.  When the program is done compiling, plug the inkling into your USB port and run:<br>
 ./inkling\_broadcaster -b ipAddress:portNumber, e.g.<br>
-``` ./inkling_broadcaster -b 127.0.0.1:2016)
-```
+``` ./inkling_broadcaster -b 127.0.0.1:2016)```
 
 The real time inkling data will be broadcast using OSC, and can be recieved and utilized by any other application.  See [here](https://github.com/kevinmkarol/inkling_stroke_analyzer/blob/master/src/ofApp.cpp) for example code to read the data stream.
 
