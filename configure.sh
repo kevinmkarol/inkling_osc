@@ -2,7 +2,8 @@
 
 #Required dependencies - if you know you already have this installed feel free to skip it
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+brew install automake
+brew install autoconf
 
 git submodule init
 git submodule update
