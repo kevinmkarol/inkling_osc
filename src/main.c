@@ -58,11 +58,24 @@ int main(int argc, char** argv)
 	              hid_device * inkling = get_inkling_device();
                   if(inkling != NULL){
 	                mac_inkling_listener(inkling, ipAddress, port);
+                  }else{
+                    goto incorrectArguments;
                   }
-	            }
-		  	  }
+	            }else{
+                  goto incorrectArguments;
+                }
+		  	  }else{
+                goto incorrectArguments;
+              }
 		  	  break;
+            default:
+              goto incorrectArguments;
 		  }
 		}
-	}
+	}else{
+      goto incorrectArguments;
+    }
+    
+    incorrectArguments:
+          puts("Incorrect invocation.  Please specify an ipAddress and port number in the form -b ipAddress:port");
 }
