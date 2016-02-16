@@ -2,6 +2,7 @@ Inkling OSC Broadcaster
 ======
 
 ![Image of pen in use](imgs/drawing.png)<br>
+[Demo Video](https://vimeo.com/155497510)<br>
 This small library broadcasts data from the [Wacom Inkling](http://inkling.wacom.com) in real time via OSC so that developers can use the data to create custom drawing applications. 
 
 To build the project simply run ./configure from the top directory.  When the program is done compiling, plug the inkling into your USB port and run:<br>
